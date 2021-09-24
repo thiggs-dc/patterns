@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FactoryExample
+﻿namespace FactoryExample
 {
-    public abstract class Car
+    public abstract class CarMethodFactory
     {
         protected abstract ICar GetCar();
 

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FactoryExample
+﻿namespace FactoryExample
 {
     public class CarSimpleFactory
     {
-        public ICar GetChevy() => new Silverado();
+        public ICar GetSilverado() => new Silverado();
         public ICar GetF150() => new F150();
+        public ICar GetEquinox() => new Equinox();
+        public ICar GetExplorer() => new Explorer();
     }
 }

@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FactoryExample
+﻿namespace FactoryExample
 {
     public class Silverado: ICar
     {
         public string Make => "Chevrolet";
         public string Model => "Silverado";
         public string Year => "1999-Current";
-
+        public VehicleTypeEnum Type => VehicleTypeEnum.Truck;
     }
 
-    public class SilveradoFactoryMethod : Car
+    public class SilveradoFactoryMethod : CarMethodFactory
     {
         protected override ICar GetCar()
         {
